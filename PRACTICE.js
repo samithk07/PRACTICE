@@ -175,3 +175,220 @@
 // (function(){
 //   console.log("this is IIFE")
 // })()
+
+
+                                                                                    // IIFE EXAMPLE
+ 
+// (function(){
+//   let counter=10;
+//   function increment(){
+//     counter++
+//     console.log("Counter :",counter)
+
+//   }
+//   increment()
+//   increment()
+// })  ()    //Counter : 11
+//          // Counter : 12
+// IF WE PUT OUTSIDE THE IIFE A CONSOLE IT WILL SHOW THAT NOT DIFINED
+// BECAUSE THE IIFE SHOULD CALL INSIDE THE FUNCTION
+// console.log(counter)
+
+                                                                                   //  rest parameter
+
+// function word(...name){
+// console.log(name);
+ 
+// }      
+// word("samith","kiran","ram");
+
+// DAY 2
+  
+// JS Object
+
+// // 1.OBJECT LITERAL
+// // objet literal is the simplest way to create a Object
+
+// let car={
+//   brand:"tesla",
+//   model:"model 7"
+
+// }
+// // this is the simplest way to create object{}
+
+// 2.USING THE newKEY 
+// IN JS BUILT-IN OBJECT() CONSTROCTOR TO CREATE A NEW OBJECT
+// YOU CAN CREATE AN EMPTY OBJECT AND ADD PROPERTICS LATTER
+
+// let student =new Object()
+// student.name="samith"
+// student.age=21
+// student.class="bca"
+// console.log(student)
+
+
+//  let student ={
+// firstname:"abdul",
+// lastname:"adil",
+// age:78,
+// fullname:function(){
+//   return this.firstname+this.lastname
+// }  
+// }
+// console.log(student.fullname())
+
+                                                                                    // OBJET MEETHOD
+
+
+// 
+
+
+
+
+
+                                                                                     // THIS
+
+// 1.THIS IN Object
+
+// let student={
+//   name:"Samith",
+//   wellcome:function(){
+//     console.log("hello" + this.name)
+//   }
+// }
+// student.wellcome()
+
+// 2.THIS IN FUNCTION
+// IN NORMAL Function
+// function show() {
+//   console.log(this);
+// }
+
+// show();
+
+// IN STRICT 
+// "use strict";
+
+// function show() {
+//   console.log(this);
+// }
+
+// show();//undifined
+
+// 3.THIS IN CONSTRUCTOR FUNCTION
+
+// function student(name,age){
+//   this.name=name,
+//   this.age=age,
+//   this.greet=function(){
+//     console.log("hello,my name is "+ this.name)
+//   }
+// }
+// let student1=new student("samith",21)
+// let student2=new student("pooja",19)
+ 
+// student1.greet()
+// student2.greet()
+
+// 4.THIS IN ARROW FUNCTION
+
+// const student = {
+//   name: "Samith",
+//   showName: function() {
+//     const arrow = () => {
+//       console.log("My name is " + this.name);
+//     };
+//     arrow();
+//   }
+// };
+
+// student.showName(); // My name is Samith
+
+//                                                                                  Array Destructuring
+
+//  let num=[10,20,30,40,]
+//  let [a,b,c,d]=num
+//  console.log(a)//10
+//  console.log(d)//20
+
+// 1.Skip Items
+
+// let num=[10,20,30,40]
+// let [a,,b]=num
+// console.log(a)
+// console.log(b)
+
+// 2.Default Values
+
+// const fruits = ["apple"];
+// const [f1, f2 = "banana"] = fruits;
+
+// console.log(f1); // apple
+// console.log(f2); // banana (default value used)
+ 
+// 3.Swap Variables Easily
+      
+//  let  x=10;
+//  let y=20;
+// [x,y]=[y,x]
+// console.log(x)
+
+// 4.Destructure Nested Array
+
+// let num=[10,20,[30,40]]
+// let [a,b,[c,d]]=num
+// console.log(d)
+
+//                                                                            // Object destructuring
+
+// let person={
+//   name:"samith",
+//   age:22
+// }                                                                           
+// let{name,age}=person
+// console.log (name)
+
+
+//                                                                     HOISTING
+  
+//1. VAR HOISTING
+// console.log(a);
+// var a=10
+// becase the var is hoisted on the top of the var so the it will be undifined
+
+// 2. IN  LET AND CONST 
+ 
+// console.log(a)
+// let a=10
+
+// let and const are also hoisted,
+// but they go into a Temporal Dead Zone (TDZ) from the start of the scope until their declaration line. 
+// You can’t access them before they are declared.
+
+// 3.FUNCTION DECLARATION HOISTING
+
+// sayhello()
+// function sayhello(){
+  // console.log("hello")
+// }
+// Function declarations are fully hoisted with their body.
+// JavaScript knows the whole function before executing code.
+
+ // 4. Function Expression Hoisting
+
+// greet(); // TypeError: greet is not a function
+// var greet = function() {
+//  console.log("Hi!");
+// };
+
+// here the the geert is not the function
+// the function expression is not fully hoisteed
+// it hoist only the variable part (var greet) is hoisted not the function itself 
+
+// 4-1.If you use let or const instead:
+ 
+// greet(); //  ReferenceError
+// let greet = function() {
+  // console.log("Hello!");
+// };
+
