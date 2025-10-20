@@ -400,7 +400,7 @@
 
 
 
-                                                                      // DAY-3
+                                                                      // DAY-4
                      
 // PURE FUNCTION
 // the pure function return the same output from same input 
@@ -414,11 +414,22 @@
 // IMPURE FUNCTION
 
 // an impure function  can produce diffrent output from same input
-let num=0;
-function add(value){
-  num+=value
-  return num
+// let num=0;
+// function add(value){
+//   num+=value
+//   return num
 
-}
-console.log(add(5))
-console.log(add(5))
+// }
+// console.log(add(5))
+// console.log(add(5))
+
+// PROTOTYPE
+
+
+
+
+
+
+// LOCAL STORAGE
+ localStorage.setItem("name","prajna")
+ 
