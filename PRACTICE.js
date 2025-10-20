@@ -392,3 +392,33 @@
   // console.log("Hello!");
 // };
 
+
+
+
+
+
+
+
+
+                                                                      // DAY-3
+                     
+// PURE FUNCTION
+// the pure function return the same output from same input 
+// function num(a,b){
+
+//   return a+b
+// }
+// console.log(num(5,10))
+// console.log(num(5,10))
+
+// IMPURE FUNCTION
+
+// an impure function  can produce diffrent output from same input
+let num=0;
+function add(value){
+  num+=value
+  return num
+
+}
+console.log(add(5))
+console.log(add(5))
