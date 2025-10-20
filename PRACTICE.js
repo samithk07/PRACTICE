@@ -430,6 +430,4 @@
 
 
 
-// LOCAL STORAGE
- localStorage.setItem("name","prajna")
- 
+
