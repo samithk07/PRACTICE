@@ -35,7 +35,7 @@
 // let numbers = [1, 4, 2, 32, 35, 566, 68, 3455];
 // let min = Math.min(...numbers);
 // console.log(min); 
-  
+
 
 // THIS IS FOR OBJET SORTING 
 // code is for sorting the age 
@@ -62,7 +62,7 @@
 //     {name:"thasmeer",age:"82"},
 //     {name:"maharoof",age:"62"},
 
-   
+
 // ]
 //  let SortByName=object.sort((a,b)=>a.name.localeCompare((b.name)))
 //  console.log(SortByName) 
@@ -92,7 +92,7 @@
 // console.log(newNum)
 
 // ARRAY forEach()
- 
+
 // let num=[2,4,6,8,9,10]
 // num.forEach(function(number){
 // console.log(number)
@@ -120,7 +120,7 @@
 // }
 // myname("samith")
 
-                                                        // DAY -2
+// DAY -2
 
 // this is Anonymous Function
 
@@ -164,21 +164,21 @@
 
 // processUserInput(greet);
 
-  //  Spread Array
+//  Spread Array
 // let arr1=[1,2,3,4, 5]
 // let arr2=[6,7,8,9,10]
 // let arr3=[...arr1,...arr2]
 // console.log(arr3)
 
 
-        // IIFE
+// IIFE
 // (function(){
 //   console.log("this is IIFE")
 // })()
 
 
-                                                                                    // IIFE EXAMPLE
- 
+// IIFE EXAMPLE
+
 // (function(){
 //   let counter=10;
 //   function increment(){
@@ -194,16 +194,16 @@
 // BECAUSE THE IIFE SHOULD CALL INSIDE THE FUNCTION
 // console.log(counter)
 
-                                                                                   //  rest parameter
+//  rest parameter
 
 // function word(...name){
 // console.log(name);
- 
+
 // }      
 // word("samith","kiran","ram");
 
 // DAY 2
-  
+
 // JS Object
 
 // // 1.OBJECT LITERAL
@@ -237,7 +237,7 @@
 // }
 // console.log(student.fullname())
 
-                                                                                    // OBJET MEETHOD
+// OBJET MEETHOD
 
 
 // 
@@ -246,7 +246,7 @@
 
 
 
-                                                                                     // THIS
+// THIS
 
 // 1.THIS IN Object
 
@@ -286,7 +286,7 @@
 // }
 // let student1=new student("samith",21)
 // let student2=new student("pooja",19)
- 
+
 // student1.greet()
 // student2.greet()
 
@@ -325,9 +325,9 @@
 
 // console.log(f1); // apple
 // console.log(f2); // banana (default value used)
- 
+
 // 3.Swap Variables Easily
-      
+
 //  let  x=10;
 //  let y=20;
 // [x,y]=[y,x]
@@ -350,14 +350,14 @@
 
 
 //                                                                     HOISTING
-  
+
 //1. VAR HOISTING
 // console.log(a);
 // var a=10
 // becase the var is hoisted on the top of the var so the it will be undifined
 
 // 2. IN  LET AND CONST 
- 
+
 // console.log(a)
 // let a=10
 
@@ -369,12 +369,12 @@
 
 // sayhello()
 // function sayhello(){
-  // console.log("hello")
+// console.log("hello")
 // }
 // Function declarations are fully hoisted with their body.
 // JavaScript knows the whole function before executing code.
 
- // 4. Function Expression Hoisting
+// 4. Function Expression Hoisting
 
 // greet(); // TypeError: greet is not a function
 // var greet = function() {
@@ -386,10 +386,10 @@
 // it hoist only the variable part (var greet) is hoisted not the function itself 
 
 // 4-1.If you use let or const instead:
- 
+
 // greet(); //  ReferenceError
 // let greet = function() {
-  // console.log("Hello!");
+// console.log("Hello!");
 // };
 
 
@@ -400,8 +400,8 @@
 
 
 
-                                                                      // DAY-4
-                     
+// DAY-4
+
 // PURE FUNCTION
 // the pure function return the same output from same input 
 // function num(a,b){
@@ -423,7 +423,163 @@
 // console.log(add(5))
 // console.log(add(5))
 
-// PROTOTYPE
+// 1.CALL
+
+// Normally, this depends on where the function is called.
+
+// But with call(), we force this to refer to a specific object (person here).
+
+// The function runs immediately.
+
+// let person = {
+//   name: "Adil",
+// };
+
+// function greet(city) {
+//   console.log(`Hello, my name is ${this.name} from ${city} `);
+// }
+
+// greet.call(person, "India");
+
+// 2.APPLY
+
+// let person = {
+//   name: "Adil",
+// };
+
+// function greet(city, country) {
+//   console.log(`Hello, my name is ${this.name} from ${city}, ${country}`);
+// }
+
+// // Using apply()
+// greet.apply(person, ["Chennai", "India",]);
+
+// 3.BIND
+
+// let person={
+//   name:"samith",
+
+// }
+// function greet(city){
+//   console.log(`hello my name is ${this.name} form ${city}`)
+// }
+// greet.bind(person,"mangalore")
+// greet()
+
+// MAP 
+// Creating a Map
+// let myMap = new Map();
+
+// Adding values
+// myMap.set("name", "Adil");
+// myMap.set("age", 22);
+// myMap.set({ city: "India" }, "Location");
+
+// Getting values
+// console.log(myMap.get("name")); // Adil
+
+// Checking if key exists
+// console.log(myMap.has("age")); // true
+
+// Size of Map
+// console.log(myMap.size); // 3
+
+// Deleting a key
+// myMap.delete("age");
+
+// Looping through Map (key)
+// for (let [key, value] of myMap) {
+// console.log(key, ":", value);
+// }
+
+// Delete all from Map
+// myMap.clear()
+
+//  map and methods
+// myMap.set("name", "Samith")
+// myMap.set("age", 30)
+// myMap.set("city", "Uppala")
+
+// 1.has return true/false
+// console.log(myMap.has("name"))//true
+
+// 2.get it returen the value of the specific key you have
+// console.log(myMap.get("city"))
+
+// 3.ent
+// console.log(myMap.entries("name"))
+
+// 4.keys it returns the key that is stored in map ,it itreates the key line by line like for loop
+// for (let key of myMap.keys()){
+// console.log(key)
+// }
+
+// 5.value same like keys it returns the value in the map
+// for (key of myMap.values()){
+  // console.log(key)
+// }
+
+
+//  6.forEach goes itrate all the and gives a function to all of it 
+
+// myMap.forEach((value,key)=>{
+// console.log("1."+ key + value)
+// })
+
+
+// SET
+
+// let fruits=new Set()
+
+// fruits.add("apple")
+// fruits.add("mango")
+// fruits.add("banana")
+// fruits.add("cherry")
+// fruits.add("apple")
+// // the set doesnot print duplicate value
+// // console.log(fruits)
+// // console.log(fruits.has("apple"));
+// // console.log(fruits.add("kiwi"))
+
+// // here add kiwi tho the first index
+// // 1-convert to Array
+// let arr=Array.from(fruits)
+// arr.unshift("kiwi")//by the array method we add the kiwi
+//  fruits=new Set(arr)//
+//  console.log (fruits)
+
+// all function
+
+// FUNCTION STATEMENT
+function a(){
+
+}
+
+// FUNCTION EXPRESSTION
+let b=function(){
+
+}
+// FUNCTION DECLARATION
+
+
+//ANONYMOUS FUNCTION
+
+
+//NAME FUNCTION EXPRESSION
+
+//DIFFERENCE B/T PARAMETER AND ARGUMENT?
+
+
+//FIRST CLASS FUNCTION
+
+// ARROW FUNCTION
+
+
+
+
+
+
+
 
 
 
