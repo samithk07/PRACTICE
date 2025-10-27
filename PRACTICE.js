@@ -1,8 +1,8 @@
 // example for sort()
 // this is to used to sort the string value arrange it in alpabetically
-// let fruits=["apple","mango","cherry"];
-// fruits.sort()
-// console.log(fruits)
+let fruits=["apple","mango","cherry"];
+let newfruite=fruits.sort()
+console.log(newfruite)
 
 // TO SORT NUMBER WE USE (a,b)=>a-b)
 // let num=["1","45","56","345","32","78"]
@@ -165,6 +165,7 @@
 // processUserInput(greet);
 
 //  Spread Array
+
 // let arr1=[1,2,3,4, 5]
 // let arr2=[6,7,8,9,10]
 // let arr3=[...arr1,...arr2]
@@ -205,7 +206,6 @@
 // DAY 2
 
 // JS Object
-
 // // 1.OBJECT LITERAL
 // // objet literal is the simplest way to create a Object
 
@@ -239,6 +239,16 @@
 
 // OBJET MEETHOD
 
+// let student={
+//   firstName:"adbul",
+//   lastName:"adil",
+//   age:21,
+//   fullName:function(){
+//     this.firstName+this.lastName
+//   }
+// }
+
+// console.log(student.fullName)
 
 // 
 
@@ -551,14 +561,14 @@
 // all function
 
 // FUNCTION STATEMENT
-function a(){
+// function a(){
 
-}
+// }
 
-// FUNCTION EXPRESSTION
-let b=function(){
+// // FUNCTION EXPRESSTION
+// let b=function(){
 
-}
+// }
 // FUNCTION DECLARATION
 
 
@@ -569,20 +579,88 @@ let b=function(){
 
 //DIFFERENCE B/T PARAMETER AND ARGUMENT?
 
-
+  
 //FIRST CLASS FUNCTION
 
 // ARROW FUNCTION
 
 
 
+// function Palindrome(a) {
+//   let str = a.toString()
+//   let reversed = str.split('').reverse().join('')
+//   return str === reversed
+// }
+// console.log(Palindrome(121))
+// console.log(Palindrome(10))        
+// console.log(Palindrome(-121)) 
+
+
+// let a=[2,4,0.3,5,6,4]
+// // a.sort((a,b)=>a- b)
+// // console.log(a)
+
+// let b=a.sort()
+// console.log(a)
 
 
 
 
+//  let a=[1,2,3,4]
+//  let b=a.map(a=>a*2)
+//  console.log(b)
+
+// let num=[2,1,4,56,3,5,]
+// let result=num.reduce((a,b)=>{
+//   return a+b
+// })
+// console.log(result)
 
 
+// let num=0
+// function sum(value){
+//   return num+=value;
+  
+// }
 
+// console.log(sum(5))
+// console.log(sum(5))
+
+
+// function sum(a,b){
+//   return a+b
+// }
+// console.log(sum(2,3))
+
+
+ 
+// let person={ 
+//   name:"samith",
+//   age:21
+// }
+// let {name,age}=person
+//  console.log(name)
+
+// Given an array of numbers [1,2,3,4,5,6], filter out even numbers, double them, and sum the result using array methods.
+//  let num=[1,2,3,4,5,6]
+//  let result=num.filter(a=>a%2==0).map(a=>a*2).reduce((a,b)=>a+b,0)
+//  console.log(result)
+
+// Sort an array of objects by age and return an array of names only.
+
+// let object=[
+//   {name:"samith",age:24},
+//   {name:"thasmeer",age:26},
+//   {name:"adil",age:87},
+//   {name:"shahid",age:32},
+//   {name:"ashfak",age:25},
+
+// ]
+
+// // let newObj=object.sort((a,b)=>a.age-b.age).map(a=>a.name)
+// // console.log(newObject)
+// let SortByName=object.sort((a,b)=>a.name.localeCompare((b.name)))
+//  console.log(SortByName)
 
 
 
