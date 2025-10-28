@@ -41,24 +41,48 @@
 // Based on the average marks, print the grade:
 //  Average ≥ 80 → "🏆 Excellent"
 // Average ≥ 50 and < 80 → "👍 Pass"
-// Average < 50 → "❌ Fail"
+// // Average < 50 → "❌ Fail"
 
 
-let object=[
-{name:"samith",marks:[39,80,90,45,62]},
-{name:"adil",marks:[89,10,59,56,21,]},
-{name:"kiran",marks:[67,85,34,89,33]},
-{name:"bob",marks:[97,54,23,54,65]},
-{name:"shahid",marks:[87,56,34,53,78,]},
-{name:"ashfak",marks:[34,67,23,89,45]}
-]
+// let object=[
+// {name:"samith",marks:[39,80,90,45,62]},
+// {name:"adil",marks:[89,10,59,56,21,]},
+// {name:"kiran",marks:[67,85,34,89,33]},
+// {name:"bob",marks:[97,54,23,54,65]},
+// {name:"shahid",marks:[87,56,34,53,78,]},
+// {name:"ashfak",marks:[34,67,23,89,45]}
+// ]
 
-let sortName=object.sort((a,b)=>a.name.localeCompare((b.name)))
-console.log(sortName)
+// let sortName=object.sort((a,b)=>a.name.localeCompare((b.name)))
+// console.log(sortName)
 
- object.forEach(a=>{a.marks.sort((a,b)=>a-b)})
- console.log(object)
+//  object.forEach(a=>{a.marks.sort((a,b)=>a-b)})
+//  console.log(object)
 
- 
+
+// Array
+let num=["apple","orenge",["mango","bluebery"],"banana"]
+// let first=num[0]
+// let second=num[1]
+// let third=num[2]
+
+let [a,b,[x,y],d]=num
+
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+
+// object 
+let  person = {
+  name: "samith",
+  age: 25,
+  city: "uppala"
+};
+
+let { name, age } = person;
+console.log(name); 
+console.log(age);  
+
 
 
