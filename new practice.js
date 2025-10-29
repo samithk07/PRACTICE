@@ -61,28 +61,34 @@
 
 
 // Array
-let num=["apple","orenge",["mango","bluebery"],"banana"]
+// let num=["apple","orenge",["mango","bluebery"],"banana"]
 // let first=num[0]
 // let second=num[1]
 // let third=num[2]
 
-let [a,b,[x,y],d]=num
+// let [a,b,[x,y],d]=num
 
-console.log(a)
-console.log(b)
-console.log(c)
-console.log(d)
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(d)
 
-// object 
-let  person = {
-  name: "samith",
-  age: 25,
-  city: "uppala"
-};
+object 
+let object={
+name:"samith",
+age:25,
+city:"kasaragod"
+}
+let {name,age}=object
+console.log(name)
 
-let { name, age } = person;
-console.log(name); 
-console.log(age);  
+let toLower = s => s.toLowerCase()
+console.log(toLower("Hello")) 
+console.log(toLower("here")) 
+console.log(toLower("LOVLEY"))
+
+
+
 
 
 
