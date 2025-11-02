@@ -73,22 +73,18 @@
 // console.log(c)
 // console.log(d)
 
-object 
-let object={
-name:"samith",
-age:25,
-city:"kasaragod"
-}
-let {name,age}=object
-console.log(name)
+// object 
+// let object={
+// name:"samith",
+// age:25,
+// city:"kasaragod"
+// }
+// let {name,age}=object
+// console.log(name)
 
-let toLower = s => s.toLowerCase()
-console.log(toLower("Hello")) 
-console.log(toLower("here")) 
-console.log(toLower("LOVLEY"))
-
-
-
-
+// let toLower = s => s.toLowerCase()
+// console.log(toLower("Hello")) 
+// console.log(toLower("here")) 
+// console.log(toLower("LOVLEY"))
 
 
