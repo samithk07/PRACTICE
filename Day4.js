@@ -1,16 +1,16 @@
 // // Generator Function 
 
-// function* Car(){
-//     yield "hello"
-//     yield 2
-//     yield 3
+function* Car(){
+    yield "hello"
+    yield 2
+    yield 3
     
-// }
-// let gen =Car()
-//     console.log(gen.next().value );
-//     // console.log(gen.next().value);
-//     // console.log(gen.next().value);
-//     // console.log(gen.next().value);
+}
+let gen =Car()
+    console.log(gen.next().value );
+    console.log(gen.next().value);
+    console.log(gen.next().value);
+    console.log(gen.next().value);
 
 
 // ******************************************************************************************************************************************************
@@ -32,9 +32,20 @@
 // let add=(a)=>(b)=>(c)=>a+b+c
 // console.log(add(2)(3)(4))
 
+// function add(a) {
+//     return function(b){
+//         return function (c){
+//             return a+b+c
+//         }
+//     }
+    
+// }
+
+// console.log(add(2)(3)(4))
 
 
-
+// let add=(a)=>(b)=>(c)=>a+b+c
+// console.log(add(10)(25)(24));
 
 
 

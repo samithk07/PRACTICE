@@ -41,10 +41,7 @@
 // c=a+b
 // console.log(c);
 
-let num =52
-let sum =String(num)
-console.log(sum);
-console.log(typeof(sum))
+
 
 
 
